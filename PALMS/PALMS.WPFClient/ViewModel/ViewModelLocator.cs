@@ -1,9 +1,7 @@
 using Autofac;
 using Autofac.Extras.CommonServiceLocator;
 using CommonServiceLocator;
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Ioc;
-using Microsoft.Practices.ServiceLocation;
+using PALMS.ViewModels;
 
 namespace PALMS.WPFClient.ViewModel
 {
@@ -34,15 +32,13 @@ namespace PALMS.WPFClient.ViewModel
 
         private void RegisterServices(ContainerBuilder builder)
         {
-            builder.RegisterType<ApiHelper>().As<IApiHelper>().SingleInstance();
-
-            builder.RegisterType<Repository>().As<IRepository>().SingleInstance();
-            builder.RegisterType<DialogService>().As<IDialogService>().SingleInstance();
+            //builder.RegisterType<Repository>().As<IRepository>().SingleInstance();
         }
 
         private static void RegisterViewModels(ContainerBuilder builder)
         {
             builder.RegisterType<MainViewModel>().SingleInstance();
+            builder.RegisterType<DataViewModel>();
             //builder.RegisterType<ReportsViewModel>();
             //builder.RegisterType<ReportEditViewModel>();
             //builder.RegisterType<ReportEditWindowViewModel>();

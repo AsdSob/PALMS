@@ -1,13 +1,12 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:PALMS.WPFClient.Themes"
                     xmlns:viewModels="clr-namespace:PALMS.ViewModels;assembly=PALMS.ViewModels"
                     xmlns:views="clr-namespace:PALMS.WPFClient.Views">
     
-    <!--<DataTemplate DataType="{x:Type viewModels:ReportsViewModel}">
-        <views:ReportsView/>
+    <DataTemplate DataType="{x:Type viewModels:DataViewModel}">
+        <views:DataView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type viewModels:ReportEditViewModel}">
+    <!--<DataTemplate DataType="{x:Type viewModels:ReportEditViewModel}">
         <views:ReportEditView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type viewModels:MessagesFromObjectReportParametersViewModel}">
