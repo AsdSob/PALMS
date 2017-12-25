@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PALMS.WPFClient.Themes"
+                    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+                    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid">
+    <!-- themes --><!--
+    <system:String x:Key="ThemeName">MetropolisLight</system:String>
+    <system:String x:Key="ThemeName2">Office2016White</system:String>
+
+    --><!-- colors --><!--
+    <Color x:Key="Color1">#009af4</Color>
+
+    --><!-- margin --><!--
+    <Thickness x:Key="ContentMargin">10</Thickness>
+
+    --><!-- converters --><!--
+    <dxmvvm:BooleanNegationConverter x:Key="BooleanNegationConverter"/>
+    <dxmvvm:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+    --><!-- styles --><!--
+    <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="Width" Value="170"/>
+    </Style>
+    <Style x:Key="LabeTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+    <Style x:Key="TextBoxStyle" TargetType="TextBox">
+
+    </Style>
+    <Style x:Key="TextEditStyle" TargetType="dxe:TextEdit">
+
+    </Style>
+    <Style x:Key="ComboBoxEditStyle" TargetType="dxe:ComboBoxEdit">
+
+    </Style>
+    <Style x:Key="LookUpEditStyle" TargetType="dxg:LookUpEdit">
+
+    </Style>-->
+
+</ResourceDictionary>
