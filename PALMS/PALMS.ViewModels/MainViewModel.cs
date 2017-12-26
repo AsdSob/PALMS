@@ -16,5 +16,10 @@ namespace PALMS.ViewModels
         {
             Content = content;
         }
+
+        public MainViewModel(MenuViewModel content)
+        {
+            Content = content;
+        }
     }
 }

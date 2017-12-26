@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using DevExpress.Xpf.DXBinding;
 using PALMS.WPFClient;
 using PALMS.WPFClient.ViewModel;
 using System;
