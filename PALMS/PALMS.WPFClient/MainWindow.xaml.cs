@@ -1,9 +1,10 @@
-﻿namespace PALMS.WPFClient
+﻿using System.Windows;
+
+namespace PALMS.WPFClient
+
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow
+
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
