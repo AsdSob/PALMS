@@ -16,3 +16,4 @@ D:\GIT\PALMS\PALMS\PALMS.ViewModels\bin\Debug\Microsoft.Practices.ServiceLocatio
 D:\GIT\PALMS\PALMS\PALMS.ViewModels\obj\Debug\PALMS.ViewModels.csproj.CoreCompileInputs.cache
 D:\GIT\PALMS\PALMS\PALMS.ViewModels\obj\Debug\PALMS.ViewModels.dll
 D:\GIT\PALMS\PALMS\PALMS.ViewModels\obj\Debug\PALMS.ViewModels.pdb
+D:\GIT\PALMS\PALMS\PALMS.ViewModels\obj\Debug\PALMS.ViewModels.csprojResolveAssemblyReference.cache

@@ -6,10 +6,10 @@
     <DataTemplate DataType="{x:Type viewModels:DataViewModel}">
         <views:DataView/>
     </DataTemplate>
-    <!--<DataTemplate DataType="{x:Type viewModels:ReportEditViewModel}">
-        <views:ReportEditView/>
+    <DataTemplate DataType="{x:Type viewModels:MenuViewModel}">
+        <views:MenuView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type viewModels:MessagesFromObjectReportParametersViewModel}">
+    <!--<DataTemplate DataType="{x:Type viewModels:MessagesFromObjectReportParametersViewModel}">
         <views:MessagesFromObjectReportParametersView/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type viewModels:MoveStopReportParametersViewModel}">

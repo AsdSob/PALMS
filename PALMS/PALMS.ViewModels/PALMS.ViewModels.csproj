@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="DataViewModel.cs" />
     <Compile Include="MainViewModel.cs" />
+    <Compile Include="MenuItemViewModel.cs" />
     <Compile Include="MenuViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

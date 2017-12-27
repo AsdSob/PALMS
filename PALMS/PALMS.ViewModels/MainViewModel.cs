@@ -5,6 +5,7 @@ namespace PALMS.ViewModels
     public class MainViewModel : ViewModelBase
     {
         private object _content;
+        private object _menuViewModel;
 
         public object Content
         {
@@ -12,14 +13,16 @@ namespace PALMS.ViewModels
             set { Set(() => Content, ref _content, value); }
         }
 
-        public MainViewModel(DataViewModel content)
+        public object MenuViewModel
         {
-            Content = content;
+            get { return _menuViewModel; }
+            set { Set(() => MenuViewModel, ref _menuViewModel, value); }
         }
 
-        public MainViewModel(MenuViewModel content)
+        public MainViewModel(DataViewModel content, MenuViewModel menu)
         {
             Content = content;
+            MenuViewModel = menu;
         }
     }
 }
