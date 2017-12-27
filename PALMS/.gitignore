@@ -1,0 +1,15 @@
+#!!!  .git/config     ignorecase = false !!!
+
+[Oo]bj/
+[Bb]in/
+packages/
+
+# Visual Studio
+.vs/
+*.tmp
+*.user
+
+!*.dll
+
+*.vssscc
+*.vspscc
