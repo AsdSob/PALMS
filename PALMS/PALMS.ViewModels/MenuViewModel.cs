@@ -28,7 +28,7 @@ namespace PALMS.ViewModels
 
         public MenuViewModel()
         {
-            Items = new ObservableCollection() {
+            Items = new ObservableCollection<MenuItemViewModel> {
 
                 new MenuItemViewModel { Name = "1" },
                 new MenuItemViewModel { Name = "2" },
