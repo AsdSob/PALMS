@@ -121,3 +121,7 @@ D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\de\DevExpress.Xpf.DocumentViewer.v1
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\es\DevExpress.Xpf.DocumentViewer.v17.1.Core.resources.dll
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\ja\DevExpress.Xpf.DocumentViewer.v17.1.Core.resources.dll
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\ru\DevExpress.Xpf.DocumentViewer.v17.1.Core.resources.dll
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\ClientView.g.cs
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\MasterLinenView.g.cs
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\ClientView.baml
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\MasterLinenView.baml

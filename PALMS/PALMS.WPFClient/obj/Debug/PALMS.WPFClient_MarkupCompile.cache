@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\App.xaml
-5-1716432660
+7-719638907
 
-81622284332
+10-2146389858
 9736496148
-Views\DataView.xaml;MainWindow.xaml;Themes\Styles.xaml;Themes\ViewDictionary.xaml;Views\MenuView.xaml;
+Views\ClientView.xaml;Views\DataView.xaml;MainWindow.xaml;Themes\Styles.xaml;Themes\ViewDictionary.xaml;Views\MasterLinenView.xaml;Views\MenuView.xaml;
 
 False
 
