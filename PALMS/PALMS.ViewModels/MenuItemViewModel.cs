@@ -7,14 +7,29 @@ using GalaSoft.MvvmLight;
 
 namespace PALMS.ViewModels
 {
-    public class MenuItemViewModel : ViewModelBase
+    public abstract class SectionViewModel<T> : ViewModelBase, ISection where T : ViewModelBase
     {
-        private string _name;
+            private string _name;
 
-        public string Name
-        {
-            get { return _name; }
-            set { Set(() => Name, ref _name, value); }
-        }
+            public string Name
+            {
+                get { return _name; }
+                set { Set(() => Name, ref _name, value); }
+            }
+    }
+
+    public interface ISection
+    {
+        string Name { get; set; }
+    }
+
+    public class ClientsSection : SectionViewModel<DataViewModel>
+    {
+
+    }
+
+    public class MasterLinensSection : SectionViewModel<MasterLinenViewModel>
+    {
+
     }
 }

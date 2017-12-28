@@ -1,11 +1,29 @@
-﻿using GalaSoft.MvvmLight;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
+using GalaSoft.MvvmLight;
+using Microsoft.Practices.ServiceLocation;
 
 namespace PALMS.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
         private object _content;
-        private object _menuViewModel;
+        private MenuViewModel _menuViewModel;
+        private ObservableCollection<ISection> _items;
+        private ISection _selectedItem;
+
+
+        public ObservableCollection<ISection> Items
+        {
+            get { return _items; }
+            set { Set(() => Items, ref _items, value); }
+        }
+
+        public ISection SelectedItem
+        {
+            get { return _selectedItem; }
+            set { Set(() => SelectedItem, ref _selectedItem, value); }
+        }
 
         public object Content
         {
@@ -13,7 +31,7 @@ namespace PALMS.ViewModels
             set { Set(() => Content, ref _content, value); }
         }
 
-        public object MenuViewModel
+        public MenuViewModel MenuViewModel
         {
             get { return _menuViewModel; }
             set { Set(() => MenuViewModel, ref _menuViewModel, value); }
@@ -23,6 +41,25 @@ namespace PALMS.ViewModels
         {
             Content = content;
             MenuViewModel = menu;
+
+            MenuViewModel.PropertyChanged += MenuPropertyChanged;
+        }
+
+        private void MenuPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            var menuViewModel = sender as MenuViewModel;
+            if (menuViewModel == null)
+                return;
+
+            if (e.PropertyName == nameof(MenuViewModel.SelectedItem))
+            {
+                if (menuViewModel.SelectedItem == null)
+                    return;
+
+                var contentType = menuViewModel.SelectedItem.GetType().GetGenericArguments()[0];
+
+                Content = ServiceLocator.Current.GetInstance(contentType);
+            }
         }
     }
 }
