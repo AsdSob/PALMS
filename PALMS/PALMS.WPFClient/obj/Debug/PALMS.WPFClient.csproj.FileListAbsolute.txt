@@ -3,7 +3,6 @@ D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\PALMS.WPFClient.exe
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\PALMS.WPFClient.pdb
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Autofac.dll
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Autofac.Extras.CommonServiceLocator.dll
-D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\CommonServiceLocator.dll
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\GalaSoft.MvvmLight.dll
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\GalaSoft.MvvmLight.Extras.dll
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\GalaSoft.MvvmLight.Platform.dll
@@ -125,3 +124,6 @@ D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\ClientView.g.cs
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\MasterLinenView.g.cs
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\ClientView.baml
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\MasterLinenView.baml
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Microsoft.Practices.ServiceLocation.xml

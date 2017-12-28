@@ -23,7 +23,7 @@ namespace PALMS.ViewModels
         string Name { get; set; }
     }
 
-    public class ClientsSection : SectionViewModel<DataViewModel>
+    public class ClientsSection : SectionViewModel<ClientViewModel>
     {
 
     }

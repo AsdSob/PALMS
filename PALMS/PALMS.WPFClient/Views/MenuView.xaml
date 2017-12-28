@@ -14,7 +14,7 @@
              d:DataContext="{d:DesignInstance viewModels:MenuViewModel}">
 
     <Grid>
-        <dxe:ListBoxEdit ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}" HorizontalContentAlignment="Center" Width="100" Margin="0,0,0,84">
+        <dxe:ListBoxEdit ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}" HorizontalContentAlignment="Center" Width="100" ShowBorder="False">
             <!-- Явное описание элемента
             <dxe:ListBoxEdit.Items>
                 <dxe:ListBoxEditItem>
@@ -33,19 +33,5 @@
                 </DataTemplate>
             </dxe:ListBoxEdit.ItemTemplate>
         </dxe:ListBoxEdit>
-        
-        <DockPanel LastChildFill="False" VerticalAlignment="Bottom">
-            <Button Width="75"
-                    Height="23"
-                    Command="{Binding ClientViewCommand}"
-                    Content="Clinet View" 
-                    DockPanel.Dock="Bottom"/>
-            <Button Width="75"
-                    Height="23"
-                    Command="{Binding MasterViewCommand}"
-                    Content="Master View"
-                    DockPanel.Dock="Bottom" />
-        </DockPanel>
-        
     </Grid>
 </UserControl>

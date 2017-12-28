@@ -1,6 +1,6 @@
 using Autofac;
 using Autofac.Extras.CommonServiceLocator;
-using CommonServiceLocator;
+using Microsoft.Practices.ServiceLocation;
 using PALMS.ViewModels;
 
 namespace PALMS.WPFClient.ViewModel
@@ -40,9 +40,9 @@ namespace PALMS.WPFClient.ViewModel
             builder.RegisterType<MainViewModel>().SingleInstance();
             builder.RegisterType<DataViewModel>();
             builder.RegisterType<MenuViewModel>().SingleInstance();
-            //builder.RegisterType<ReportsViewModel>();
-            //builder.RegisterType<ReportEditViewModel>();
-            //builder.RegisterType<ReportEditWindowViewModel>();
+            builder.RegisterType<ClientViewModel>();
+            builder.RegisterType<MasterLinenViewModel>();
+          
         }
     }
 }

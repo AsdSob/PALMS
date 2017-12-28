@@ -13,17 +13,15 @@ namespace PALMS.ViewModels
 {
     public class MenuViewModel : ViewModelBase
     {
-        private ObservableCollection<MenuItemViewModel> _items;
-        private MenuItemViewModel _selectedItem;
+        private ObservableCollection<ISection> _items;
+        private ISection _selectedItem;
         
-
-        public ObservableCollection<MenuItemViewModel> Items
+        public ObservableCollection<ISection> Items
         {
             get { return _items; }
             set { Set(() => Items, ref _items, value); }
         }
-
-        public MenuItemViewModel SelectedItem
+        public ISection SelectedItem
         {
             get { return _selectedItem; }
             set { Set(() => SelectedItem, ref _selectedItem, value); }
@@ -31,11 +29,10 @@ namespace PALMS.ViewModels
 
         public MenuViewModel()
         {
-            Items = new ObservableCollection<MenuItemViewModel> {
+            Items = new ObservableCollection<ISection> {
 
-                new MenuItemViewModel { Name = "1" },
-                new MenuItemViewModel { Name = "2" },
-                new MenuItemViewModel { Name = "3" },
+                new ClientsSection { Name = "Client" },
+                new MasterLinensSection { Name = "Master Linen" },
 
             };
         }

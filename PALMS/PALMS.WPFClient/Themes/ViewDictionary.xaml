@@ -9,11 +9,12 @@
     <DataTemplate DataType="{x:Type viewModels:MenuViewModel}">
         <views:MenuView/>
     </DataTemplate>
-    <!--<DataTemplate DataType="{x:Type viewModels:MessagesFromObjectReportParametersViewModel}">
-        <views:MessagesFromObjectReportParametersView/>
+    <DataTemplate DataType="{x:Type viewModels:ClientViewModel}">
+        <views:ClientView/>
     </DataTemplate>
-    <DataTemplate DataType="{x:Type viewModels:MoveStopReportParametersViewModel}">
-        <views:MoveStopReportParametersView/>
-    </DataTemplate>-->
+    <DataTemplate DataType="{x:Type viewModels:MasterLinenViewModel}">
+        <views:MasterLinenView/>
+    </DataTemplate>
+   
     
 </ResourceDictionary>

@@ -10,14 +10,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525"
         DataContext="{Binding Main, Source={StaticResource Locator}}">
-    <!--<Window.Resources>
-        <DataTemplate x:Name="ClientViewTemplate" DataType="{x:Type viewmodels:ClientViewModel}">
-            <views:ClientView DataContex="{Binding}"/>
-        </DataTemplate>
-        <DataTemplate x:Name="MasterLinenViewTemplate" DataType="{x:Type viewmodels:MasterLinenViewModel}">
-            <views:MasterLinenView DataContex="{Binding}"/>
-        </DataTemplate>
-    </Window.Resources>-->
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>

@@ -9,28 +9,12 @@ namespace PALMS.ViewModels
     {
         private object _content;
         private MenuViewModel _menuViewModel;
-        private ObservableCollection<ISection> _items;
-        private ISection _selectedItem;
-
-
-        public ObservableCollection<ISection> Items
-        {
-            get { return _items; }
-            set { Set(() => Items, ref _items, value); }
-        }
-
-        public ISection SelectedItem
-        {
-            get { return _selectedItem; }
-            set { Set(() => SelectedItem, ref _selectedItem, value); }
-        }
 
         public object Content
         {
             get { return _content; }
             set { Set(() => Content, ref _content, value); }
         }
-
         public MenuViewModel MenuViewModel
         {
             get { return _menuViewModel; }
@@ -56,7 +40,7 @@ namespace PALMS.ViewModels
                 if (menuViewModel.SelectedItem == null)
                     return;
 
-                var contentType = menuViewModel.SelectedItem.GetType().GetGenericArguments()[0];
+                var contentType = menuViewModel.SelectedItem.GetType().BaseType?.GetGenericArguments()[0];
 
                 Content = ServiceLocator.Current.GetInstance(contentType);
             }
