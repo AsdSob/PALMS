@@ -1,12 +1,53 @@
-﻿<UserControl x:Class="PALMS.WPFClient.Views.ClientView"
+﻿<UserControl
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PALMS.WPFClient.Views"
+             
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:viewModels="clr-namespace:PALMS.ViewModels;assembly=PALMS.ViewModels"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxprg="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid" x:Class="PALMS.WPFClient.Views.ClientView"
+             d:DataContext="{d:DesignInstance {x:Type viewModels:ClientViewModel}}"
+             
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Background="Aqua">
+
+        <dxg:GridControl ItemsSource="{Binding Customers}"
+                         SelectedItem="{Binding SelectedItem}">
             
+            <!--<dxmvvm:Interaction.Behaviors>
+                
+                <dxmvvm:EventToCommand EventName="MouseDoubleClick"
+                                       Command="{Binding ShowReportCommand}"
+                                       CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=dxg:GridControl}, Path=SelectedItem}"/>
+            </dxmvvm:Interaction.Behaviors>-->
+            
+            <dxg:GridControl.View>
+                <dxg:TableView AllowEditing="True"
+                               AutoWidth="True"
+                               ShowSearchPanelMode="Always"
+                               ShowSearchPanelFindButton="True"
+                               SearchPanelFindMode="Always"
+                               ShowTotalSummary="True"/>
+
+            </dxg:GridControl.View>
+
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Name" Header="Название"/>
+                <dxg:GridColumn FieldName="City" Header="Тип"/>
+                <dxg:GridColumn FieldName="Visits"/>
+                <dxg:GridColumn FieldName="Birthday" Header="Дата/время первого построения">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:DateEditSettings DisplayFormat="dd.MM.yyyy HH.mm"/>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+            </dxg:GridControl.Columns>
+        </dxg:GridControl>
+
     </Grid>
 </UserControl>
