@@ -7,7 +7,7 @@ using GalaSoft.MvvmLight.Views;
 
 namespace PALMS.ViewModels.Services
 {
-    public class Repository : IRepository
+    public class Repository
     {
   
     }
