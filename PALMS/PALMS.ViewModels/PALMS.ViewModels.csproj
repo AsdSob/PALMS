@@ -63,9 +63,21 @@
     <Compile Include="MenuItemViewModel.cs" />
     <Compile Include="MenuViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IRepository.cs" />
+    <Compile Include="Services\Repository.cs" />
+    <Compile Include="Services\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dictionaries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PALMS.Data\PALMS.Data.csproj">
+      <Project>{EECF015E-F60A-44E2-8608-57CA748CBCF1}</Project>
+      <Name>PALMS.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

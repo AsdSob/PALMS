@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PALMS.WPFClient", "PALMS.WPFClient\PALMS.WPFClient.csproj", "{D41A8E6F-5CE9-4BDA-85DF-4CF7CED9DCD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PALMS.ViewModels", "PALMS.ViewModels\PALMS.ViewModels.csproj", "{FBC55DEE-4025-4D63-B885-6D32BA1A1087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PALMS.Data", "PALMS.Data\PALMS.Data.csproj", "{EECF015E-F60A-44E2-8608-57CA748CBCF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FBC55DEE-4025-4D63-B885-6D32BA1A1087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC55DEE-4025-4D63-B885-6D32BA1A1087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC55DEE-4025-4D63-B885-6D32BA1A1087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECF015E-F60A-44E2-8608-57CA748CBCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECF015E-F60A-44E2-8608-57CA748CBCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECF015E-F60A-44E2-8608-57CA748CBCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECF015E-F60A-44E2-8608-57CA748CBCF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

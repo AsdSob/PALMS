@@ -127,3 +127,7 @@ D:\GIT\PALMS\PALMS\PALMS.WPFClient\obj\Debug\Views\MasterLinenView.baml
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\EntityFramework.dll
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\EntityFramework.SqlServer.dll
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\EntityFramework.xml
+D:\GIT\PALMS\PALMS\PALMS.WPFClient\bin\Debug\EntityFramework.SqlServer.xml
